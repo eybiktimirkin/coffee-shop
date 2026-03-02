@@ -76,5 +76,29 @@ import ProductCard from "@/components/ProductCard.vue";
 
 export default {
   components: { NavBarComponent, ProductCard },
+  data() {
+    return {
+      cards: [
+        {
+          id: 0,
+          text: "",
+          icon: "",
+          price: "",
+        },
+        {
+          id: 1,
+          text: "",
+          icon: "",
+          price: "",
+        },
+        {
+          id: 2,
+          text: "",
+          icon: "",
+          price: "",
+        },
+      ],
+    };
+  },
 };
 </script>
