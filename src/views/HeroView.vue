@@ -60,22 +60,12 @@
           <div class="col-lg-10 offset-lg-1">
             <div class="best__wrapper">
               <product-card
-                classItem="best_item"
-                :name="bestsellers[0].name"
-                :price="bestsellers[0].price"
-                :image="bestsellers[0].image"
-              />
-              <product-card
-                classItem="best_item"
-                :name="bestsellers[1].name"
-                :price="bestsellers[1].price"
-                :image="bestsellers[1].image"
-              />
-              <product-card
-                classItem="best_item"
-                :name="bestsellers[2].name"
-                :price="bestsellers[2].price"
-                :image="bestsellers[2].image"
+                v-for="item in bestsellers"
+                :key="item.id"
+                :name="item.name"
+                :price="item.price"
+                :image="item.image"
+                classItem="best__item"
               />
             </div>
           </div>
